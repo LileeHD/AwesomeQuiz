@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82B6FF"
+    tools:context="com.example.android.awesomequiz.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:layout_marginVertical="30dp"
+            android:fontFamily="@font/stan0757"
+            android:textAllCaps="true"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test your Might !"
+
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/start_quiz"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/stan0757"
+            android:paddingHorizontal="25dp"
+            android:text="@string/start_btn"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:onClick="openQuestionsList"/>
+    </LinearLayout>
+
+</RelativeLayout>

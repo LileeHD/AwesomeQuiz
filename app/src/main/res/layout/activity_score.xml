@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.awesomequiz.ScoreActivity">
+
+    <ImageView
+        android:id="@+id/image_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:adjustViewBounds="true" />
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="#757575"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colorAccent"
+        android:text="@string/reset_btn"
+        android:textColor="#fff"
+        android:fontFamily="@font/stan0757"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:onClick="reset"
+        />
+</LinearLayout>
